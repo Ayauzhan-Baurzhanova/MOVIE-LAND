@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Movie Land</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header-section">
+        <div class="logo">Movie Land</div>
+       <nav>
+    <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="movies.html">Movies</a></li>
+        <li><a href="tv-shows.html">TV Shows</a></li>
+        <li><a href="categories.html">Categories</a></li>
+        <li><a href="registration.html">Register</a></li>
+        <li><a href="contacts.html">Contact</a></li>
+    </ul>
+       </nav>
+    </header>
+
+    <!-- Registration Form Section -->
+    <section class="form-section">
+        <div class="form-container">
+            <h2 class="section-title">Create Your Account</h2>
+            <p class="form-subtitle">Join Movie Land today and start streaming thousands of movies and TV shows.</p>
+            
+            <form class="registration-form">
+                <div class="form-group">
+                    <label for="fullname">Full Name</label>
+                    <input type="text" id="fullname" name="fullname" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                    <small class="form-help">Must be at least 8 characters</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="plan">Subscription Plan</label>
+                    <select id="plan" name="plan">
+                        <option value="basic">Basic - $7.99/month</option>
+                        <option value="standard">Standard - $10.99/month</option>
+                        <option value="premium">Premium - $13.99/month</option>
+                    </select>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></label>
+                </div>
+                
+                <button type="submit" class="form-button">Create Account</button>
+                
+                <div class="form-footer">
+                    <p>Already have an account? <a href="#">Sign In</a></p>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">FAQ</a>
+                <a href="#">Help Center</a>
+                <a href="#">Account</a>
+                <a href="#">Media Center</a>
+                <a href="#">Investor Relations</a>
+                <a href="#">Jobs</a>
+                <a href="#">Ways to Watch</a>
+                <a href="#">Terms of Use</a>
+                <a href="#">Privacy</a>
+                <a href="#">Cookie Preferences</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Speed Test</a>
+                <a href="#">Legal Notices</a>
+                <a href="#">Only on Movie Land</a>
+            </div>
+            <div class="team-members">
+                Team Members: Baurzhanova Ayauzhan, Ospanali Akbota, Zaure Tolegen
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
