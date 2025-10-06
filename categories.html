@@ -7,27 +7,34 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+  <!-- Flexbox Nav -->
   <header class="header-section">
     <div class="container header-inner">
-      <div class="logo">MovieLand</div>
+      <a class="logo" href="index.html">MovieLand</a>
       <nav>
-    <ul class="nav-menu">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="movies.html">Movies</a></li>
-        <li><a href="tv-shows.html">TV Shows</a></li>
-        <li><a href="categories.html">Categories</a></li>
-        <li><a href="registration.html">Register</a></li>
-        <li><a href="contacts.html">Contact</a></li>
-    </ul>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="movies.html">Movies</a></li>
+          <li><a href="tv-shows.html">TV Shows</a></li>
+          <li><a href="categories.html" aria-current="page">Categories</a></li>
+          <li><a href="registration.html">Register</a></li>
+          <li><a href="contacts.html">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Фильтр (теги) -->
-  <section class="section">
-    <div class="container">
+  <!-- ===== Grid Page Layout with Areas (Task 3) ===== -->
+  <main class="layout container">
+    <!-- header area -->
+    <section class="layout__header">
       <h1 class="section-title">Browse by Category</h1>
+      <p class="muted">This page demonstrates a CSS Grid layout with areas: header, sidebar, main and footer.</p>
+    </section>
 
+    <!-- sidebar area -->
+    <aside class="layout__sidebar">
+      <h3>Filters</h3>
       <div id="filter-bar" role="toolbar" aria-label="Category filters">
         <span class="tag tag--active">All</span>
         <span class="tag">Action</span>
@@ -39,7 +46,13 @@
         <span class="tag">Family</span>
       </div>
 
-      <!-- сетка категорий -->
+      <div class="sidebar-note">
+        <p class="muted">Tip: Click tags to filter the grid.</p>
+      </div>
+    </aside>
+
+    <!-- main area -->
+    <section class="layout__main">
       <div class="grid" aria-label="Categories grid">
         <!-- Action -->
         <article class="card category-card">
@@ -114,21 +127,31 @@
           </div>
         </article>
       </div>
-    </div>
-  </section>
 
-  <!-- небольшой блок по стилю с твоими формами (задание 8) -->
-  <section class="section newsletter">
-    <div class="container">
-      <h2 class="section-title">Suggest a Category</h2>
-      <p>Can’t find what you want? Tell us!</p>
-      <form class="form">
-        <input class="input" type="text" placeholder="Category name">
-        <button class="btn" type="submit">Send</button>
-      </form>
-    </div>
-  </section>
+      <!-- Галерея 3×3 (Task 4) -->
+      <section class="gallery">
+        <h2 class="section-title">Actors</h2>
+        <div class="grid-gallery">
+          <figure class="grid__item"><img src="millie.jpg" alt="Gallery 1"><figcaption>Millie Bobby Brown</figcaption></figure>
+          <figure class="grid__item"><img src="njh.jpg" alt="Gallery 2"><figcaption>Nam Joo Hyuk</figcaption></figure>
+          <figure class="grid__item"><img src="jacob.jpg" alt="Gallery 3"><figcaption>Jacob Elrodi</figcaption></figure>
+          <figure class="grid__item"><img src="felix.jpg" alt="Gallery 4"><figcaption>Felix Mallard</figcaption></figure>
+          <figure class="grid__item"><img src="emma.jpg" alt="Gallery 5"><figcaption>Emma Mackey</figcaption></figure>
+          <figure class="grid__item"><img src="chad.jpg" alt="Gallery 6"><figcaption>Chadwick Boseman</figcaption></figure>
+          <figure class="grid__item"><img src="noah.jpg" alt="Gallery 7"><figcaption>Noah Centineo</figcaption></figure>
+          <figure class="grid__item"><img src="jenna.jpg" alt="Gallery 8"><figcaption>Jenna Ortega</figcaption></figure>
+          <figure class="grid__item"><img src="hsh.jpg" alt="Gallery 9"><figcaption>Han Soo Hee</figcaption></figure>
+        </div>
+      </section>
+    </section>
 
+    <!-- footer area (внутри layout, не путать с глобальным) -->
+    <footer class="layout__footer">
+      <small class="muted">Grid Areas demo footer • fits into the page layout</small>
+    </footer>
+  </main>
+
+  <!-- Глобальный футер сайта -->
   <footer>
     <div class="container footer-inner">
       <nav class="footer-links">
