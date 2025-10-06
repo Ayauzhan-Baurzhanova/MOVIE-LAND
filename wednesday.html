@@ -23,71 +23,95 @@
         </div>
     </header>
 
-    <section class="section">
-        <div class="container">
-            <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 3rem; align-items: start;">
-                <!-- Poster -->
-                <div>
-                    <img src="sreda.jpg" alt="Wednesday" style="width: 100%; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.3);">
+    <main class="wednesday-main">
+        <section class="section">
+            <div class="container">
+                <!-- Используем Grid для основного layout -->
+                <div class="wednesday-details">
+                    <!-- Poster -->
+                    <div class="wednesday-poster-container">
+                        <img src="sreda.jpg" alt="Wednesday" class="wednesday-poster">
+                    </div>
+                    
+                    <!-- Details -->
+                    <div class="wednesday-info">
+                        <h1 class="section-title" style="border: none; margin-bottom: 1rem;">Wednesday</h1>
+                        <div class="badges-container">
+                            <span class="badge">TV Series</span>
+                            <span class="badge">Comedy</span>
+                            <span class="badge">Horror</span>
+                            <span class="badge">Fantasy</span>
+                        </div>
+                        
+                        <p class="wednesday-description">
+                            While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, 
+                            thwart a monstrous killing spree that has terrorized the local town, and solve the supernatural mystery 
+                            that embroiled her parents 25 years ago — all while navigating her new relationships.
+                        </p>
+                        
+                        <!-- Используем Grid для деталей -->
+                        <div class="details-grid">
+                            <div class="detail-item">
+                                <strong>Release Year:</strong> 2022
+                            </div>
+                            <div class="detail-item">
+                                <strong>Seasons:</strong> 1
+                            </div>
+                            <div class="detail-item">
+                                <strong>Episodes:</strong> 8
+                            </div>
+                            <div class="detail-item">
+                                <strong>Rating:</strong> ★★★★☆ (4.5/5)
+                            </div>
+                        </div>
+                        
+                        <button class="cta-button watch-now-btn">
+                            ▶ Watch Now
+                        </button>
+                    </div>
                 </div>
                 
-                <!-- Details -->
-                <div>
-                    <h1 class="section-title" style="border: none; margin-bottom: 1rem;">Wednesday</h1>
-                    <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
-                        <span class="badge">TV Series</span>
-                        <span class="badge">Comedy</span>
-                        <span class="badge">Horror</span>
-                        <span class="badge">Fantasy</span>
-                    </div>
-                    
-                    <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 2rem; color: var(--text-secondary);">
-                        While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, 
-                        thwart a monstrous killing spree that has terrorized the local town, and solve the supernatural mystery 
-                        that embroiled her parents 25 years ago — all while navigating her new relationships.
-                    </p>
-                    
-                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 2rem;">
-                        <div>
-                            <strong>Release Year:</strong> 2022
+                <!-- Episodes -->
+                <div class="episodes-section">
+                    <h2 class="section-title">Episodes</h2>
+                    <div class="episode-list">
+                        <div class="episode-item">
+                            <span class="episode-title">Episode 1: Wednesday's Child is Full of Woe</span>
+                            <button class="episode-btn">Watch</button>
                         </div>
-                        <div>
-                            <strong>Seasons:</strong> 1
+                        <div class="episode-item">
+                            <span class="episode-title">Episode 2: Woe Is the Loneliest Number</span>
+                            <button class="episode-btn">Watch</button>
                         </div>
-                        <div>
-                            <strong>Episodes:</strong> 8
+                        <div class="episode-item">
+                            <span class="episode-title">Episode 3: Friend or Woe</span>
+                            <button class="episode-btn">Watch</button>
                         </div>
-                        <div>
-                            <strong>Rating:</strong> ★★★★☆ (4.5/5)
+                        <div class="episode-item">
+                            <span class="episode-title">Episode 4: Woe What a Night</span>
+                            <button class="episode-btn">Watch</button>
                         </div>
-                    </div>
-                    
-                    <button class="cta-button" style="font-size: 1.2rem; padding: 1rem 2rem;">
-                        ▶ Watch Now
-                    </button>
-                </div>
-            </div>
-            
-            <!-- Episodes -->
-            <div style="margin-top: 4rem;">
-                <h2 class="section-title">Episodes</h2>
-                <div style="display: flex; flex-direction: column; gap: 1rem;">
-                    <div style="display: flex; justify-content: between; align-items: center; padding: 1rem; background: var(--card-bg); border-radius: 8px;">
-                        <span>Episode 1: Wednesday's Child is Full of Woe</span>
-                        <button class="card__btn" style="width: auto; padding: 0.5rem 1rem;">Watch</button>
-                    </div>
-                    <div style="display: flex; justify-content: between; align-items: center; padding: 1rem; background: var(--card-bg); border-radius: 8px;">
-                        <span>Episode 2: Woe Is the Loneliest Number</span>
-                        <button class="card__btn" style="width: auto; padding: 0.5rem 1rem;">Watch</button>
-                    </div>
-                    <div style="display: flex; justify-content: between; align-items: center; padding: 1rem; background: var(--card-bg); border-radius: 8px;">
-                        <span>Episode 3: Friend or Woe</span>
-                        <button class="card__btn" style="width: auto; padding: 0.5rem 1rem;">Watch</button>
+                        <div class="episode-item">
+                            <span class="episode-title">Episode 5: You Reap What You Woe</span>
+                            <button class="episode-btn">Watch</button>
+                        </div>
+                        <div class="episode-item">
+                            <span class="episode-title">Episode 6: Quid Pro Woe</span>
+                            <button class="episode-btn">Watch</button>
+                        </div>
+                        <div class="episode-item">
+                            <span class="episode-title">Episode 7: If You Don't Woe Me By Now</span>
+                            <button class="episode-btn">Watch</button>
+                        </div>
+                        <div class="episode-item">
+                            <span class="episode-title">Episode 8: A Murder of Woes</span>
+                            <button class="episode-btn">Watch</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         <div class="container footer-inner">
